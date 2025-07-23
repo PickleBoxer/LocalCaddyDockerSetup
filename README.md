@@ -116,6 +116,26 @@ No need to restart the container. This command tells Caddy to reload its config 
 
 You should see the whoami page for each, **using HTTPS with no browser warnings**!
 
+## 🚀 Quick Add Site to Caddy (Docker)
+
+Easily add a new site using **WSL2/Linux** or **Windows PowerShell**:
+
+| Environment    | Script                 | How to Run                                                |
+|----------------|------------------------|-----------------------------------------------------------|
+| WSL2 / Linux   | `add-caddy-site.sh`    | `./add-caddy-site.sh` in your terminal                    |
+| Windows        | `add-caddy-site.ps1`   | Run from PowerShell as Administrator:<br>`.\add-caddy-site.ps1` |
+
+**Both scripts:**
+- Prompt you for container, domain, and port.
+- Update the Caddyfile inside the container.
+- Format and reload Caddy.
+- On Windows, your hosts file is updated automatically.<br>
+  On WSL2/Linux, don’t forget to add your domain to `C:\Windows\System32\drivers\etc\hosts`:
+
+```plaintext
+127.0.0.1 yoursite.local
+```
+
 ## 📝 Summary Table
 
 | Step | Action                    | Command/Location                                          |
