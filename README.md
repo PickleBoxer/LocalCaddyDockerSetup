@@ -159,4 +159,8 @@ Easily add a new site using **WSL2/Linux** or **Windows PowerShell**:
 - [Caddy Documentation](https://caddyserver.com/docs/)
 - [whoami Docker Image](https://hub.docker.com/r/traefik/whoami)
 
+## 📝 License
+
+MIT
+
 **Enjoy your secure, local multi-project development setup! 🚦**
