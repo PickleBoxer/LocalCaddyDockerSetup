@@ -1,0 +1,9 @@
+project1.local {
+    reverse_proxy host.docker.internal:8001
+    tls internal
+}
+
+project2.local {
+    reverse_proxy host.docker.internal:8002
+    tls internal
+}
